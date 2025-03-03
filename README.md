@@ -46,6 +46,22 @@ Ebanx
   pip install -r requirements.txt
   ```
 
+## Dockerized Version
+
+To run the application using Docker, follow these steps:
+
+1. **Build the Docker image:**
+  ```
+  docker build -t flask-account-management-api .
+  ```
+
+2. **Run the Docker container:**
+  ```
+  docker run -p 5000:5000 flask-account-management-api
+  ```
+
+The application will be accessible at `http://localhost:5000`.
+
 ## Python Version
 
 This project uses Python version 3.12.6. Ensure you have this version installed before setting up the virtual environment.
