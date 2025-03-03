@@ -1,0 +1,18 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+    environment:
+      FLASK_APP: app
+      FLASK_RUN_HOST: 0.0.0.0
+      FLASK_DEBUG: 1
+    networks:
+      - ebanx_net
+  
+networks:
+  ebanx_net:
+    driver: bridge
+      
