@@ -1,0 +1,4 @@
+codealike.json
+.venv/*
+*.pyc
+.vscode/launch.json

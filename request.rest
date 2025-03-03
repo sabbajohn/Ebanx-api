@@ -1,0 +1,60 @@
+
+### Reset the state
+POST http://localhost:5000/reset
+Content-Type: application/json
+
+### Get balance of a nonexistent account
+GET http://localhost:5000/balance?account_id=nonexistent
+Content-Type: application/json
+
+### Deposit into an account
+POST http://localhost:5000/event
+Content-Type: application/json
+
+{
+    "type": "deposit",
+    "destination": "account1",
+    "amount": 100
+}
+
+### Withdraw from an account
+POST http://localhost:5000/event
+Content-Type: application/json
+
+{
+    "type": "withdraw",
+    "origin": "account1",
+    "amount": 50
+}
+
+### Transfer between accounts
+POST http://localhost:5000/event
+Content-Type: application/json
+
+{
+    "type": "transfer",
+    "origin": "account1",
+    "destination": "account2",
+    "amount": 50
+}
+
+### Withdraw with insufficient funds
+POST http://localhost:5000/event
+Content-Type: application/json
+
+{
+    "type": "withdraw",
+    "origin": "account1",
+    "amount": 50
+}
+
+### Transfer with insufficient funds
+POST http://localhost:5000/event
+Content-Type: application/json
+
+{
+    "type": "transfer",
+    "origin": "account1",
+    "destination": "account2",
+    "amount": 50
+}
