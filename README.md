@@ -21,30 +21,34 @@ Ebanx
 ## Installation
 
 1. **Clone the repository:**
-   ```
-   git clone <repository-url>
-   cd flask-app
-   ```
+  ```
+  git clone <repository-url>
+  cd flask-app
+  ```
 
 2. **Set up a virtual environment:**
-   ```
-   python3 -m venv venv
-   ```
+  ```
+  python3 -m venv venv
+  ```
 
 3. **Activate the virtual environment:**
-   - On macOS/Linux:
-     ```
-     source venv/bin/activate
-     ```
-   - On Windows:
-     ```
-     venv\Scripts\activate
-     ```
+  - On macOS/Linux:
+    ```
+    source venv/bin/activate
+    ```
+  - On Windows:
+    ```
+    venv\Scripts\activate
+    ```
 
 4. **Install the required packages:**
-   ```
-   pip install -r requirements.txt
-   ```
+  ```
+  pip install -r requirements.txt
+  ```
+
+## Python Version
+
+This project uses Python version 3.12.6. Ensure you have this version installed before setting up the virtual environment.
 
 ## Running the Application
 
